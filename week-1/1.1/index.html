@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <title>Frameworks Week1: 1.1</title>
+  </head>
+  <body>
+    <h1>Test</h1>
+    <hr />
+
+    <!-- todo p*2>lorem15 -->
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque ab minus
+      similique, aspernatur repudiandae illo.
+    </p>
+    <p>
+      Accusantium voluptates illum, pariatur, molestiae veritatis esse quod
+      expedita delectus commodi aperiam laudantium. Tempora, quam!
+    </p>
+    <hr />
+
+    <!-- todo ul>li*5>a[href="$"]{link $} -->
+    <ul>
+      <li><a href="1">link 1</a></li>
+      <li><a href="2">link 2</a></li>
+      <li><a href="3">link 3</a></li>
+      <li><a href="4">link 4</a></li>
+      <li><a href="5">link 5</a></li>
+    </ul>
+    <hr />
+
+    <div class="display-1">Bookstrap Textstylings</div>
+    <br />
+
+    <!-- paragraphs with heading sizings via bootstrad -->
+    <!-- todo p*6.h${H$. via bootstrap} -->
+    <p class="h1">H1. via bootstrap</p>
+    <p class="h2">H2. via bootstrap</p>
+    <p class="h3">H3. via bootstrap</p>
+    <p class="h4">H4. via bootstrap</p>
+    <p class="h5">H5. via bootstrap</p>
+    <p class="h6">H6. via bootstrap</p>
+    <br />
+
+    <!-- Heading with faded secondary text -->
+    <!-- todo h3{Heading}>small.text-muted{MutedText} -->
+    <h3>Heading <small class="text-muted">Muted Text</small></h3>
+    <br />
+
+    <!-- Using display headers for something to stand out (Bigger, opinionated heading style) -->
+    <!-- todo h$.display-${Display $}*6 -->
+    <h1 class="display-1">Display 1</h1>
+    <h2 class="display-2">Display 2</h2>
+    <h3 class="display-3">Display 3</h3>
+    <h4 class="display-4">Display 4</h4>
+    <h5 class="display-5">Display 5</h5>
+    <h6 class="display-6">Display 6</h6>
+    <br />
+
+    <!-- Make a paragrash standout with class="lead" -->
+    <!-- todo p.lead{lead paragragh $}*3 -->
+    <p class="lead">lead paragragh 1</p>
+    <p class="lead">lead paragragh 2</p>
+    <p class="lead">lead paragragh 3</p>
+    <br />
+
+    <!-- Bootstrap tags -->
+    <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+    <p><del>This line of text is meant to be treated as deleted text.</del></p>
+    <p>
+      <s>This line of text is meant to be treated as no longer accurate.</s>
+    </p>
+    <p>
+      <ins
+        >This line of text is meant to be treated as an addition to the
+        document.</ins
+      >
+    </p>
+    <p><u>This line of text will render as underlined.</u></p>
+    <p>
+      <small>This line of text is meant to be treated as fine print.</small>
+    </p>
+    <p><strong>This line rendered as bold text.</strong></p>
+    <p><em>This line rendered as italicized text.</em></p>
+    <br />
+
+    <!-- Abbreviations, gain a help cursor -->
+    <!-- todo: <abbr title="attribute"> Lorem </abbr> for dotted underline -->
+    <!-- todo: <abbr title="attribute class="initialism"> Lorem </abbr> for finer dotted underline -->
+    <p><abbr title="attribute">Abbreviation: Dotted underline</abbr></p>
+    <p>
+      <abbr title="attribute" class="initialism"
+        >Abbreviation: fine Dotted underline</abbr
+      >
+    </p>
+    <br />
+
+    <!-- Blockquote, For quoting blocks of content -->
+    <!-- todo:  Wrap <blockquote class="blockquote"> </blockquote> around any HTML as the quote-->
+    <blockquote class="blockquote"><p>test test test blockquote</p></blockquote>
+    <br />
+
+    <!-- Naming a source, figcaption -->
+    <figure>
+      <blockquote class="blockquote">
+        This is a very well knows quote
+      </blockquote>
+      <figcation class="blockquote-footer">
+        quoted by this person from <cite title="Source">lala land</cite>
+      </figcation>
+    </figure>
+    <br />
+
+    <!--Alignment -->
+    <!-- todo: use classes of text-center or text-end -->
+    <figure class="text-center">
+      <blockquote class="blockquote">
+        This is a very well knows quote
+      </blockquote>
+      <figcation class="blockquote-footer">
+        quoted by this person from <cite title="Source">lala land</cite>
+      </figcation>
+    </figure>
+
+    <figure class="text-end">
+      <blockquote class="blockquote">
+        This is a very well knows quote
+      </blockquote>
+      <figcation class="blockquote-footer">
+        quoted by this person from <cite title="Source">lala land</cite>
+      </figcation>
+    </figure>
+    <br />
+
+    <!-- Create unstyled lists -->
+    <!-- todo: use class="list-unstyled" within the <ul> OR <li>tag -->
+
+    <ul class="list-unstyled">
+      <li>This is a list.</li>
+      <li>It appears completely unstyled.</li>
+      <li>Structurally, it's still a list.</li>
+      <li>However, this style only applies to immediate child elements.</li>
+      <li>
+        Nested lists:
+        <ul>
+          <li class="list-unstyled">are unaffected by this style</li>
+          <li>will still show a bullet</li>
+          <li>and have appropriate left margin</li>
+        </ul>
+      </li>
+      <li>This may still come in handy in some situations.</li>
+    </ul>
+    <hr />
+
+    <div class="display-1">Bootstrap utilities colours</div>
+
+    <!-- Imported colors & stylings from bootstrap -->
+    <p class="text-primary">.text-primary</p>
+    <p class="text-secondary">.text-secondary</p>
+    <p class="text-success">.text-success</p>
+    <p class="text-danger">.text-danger</p>
+    <p class="text-warning bg-dark">.text-warning</p>
+    <p class="text-info bg-dark">.text-info</p>
+    <p class="text-light bg-dark">.text-light</p>
+    <p class="text-dark">.text-dark</p>
+    <p class="text-body">.text-body</p>
+    <p class="text-muted">.text-muted</p>
+    <p class="text-white bg-dark">.text-white</p>
+    <p class="text-black-50">.text-black-50</p>
+    <p class="text-white-50 bg-dark">.text-white-50</p>
+
+    <!-- Bootstrap opacity .text-opacity -->
+    <div class="text-primary">This is default primary text</div>
+    <div class="text-primary text-opacity-75">
+      This is 75% opacity primary text
+    </div>
+    <div class="text-primary text-opacity-50">
+      This is 50% opacity primary text
+    </div>
+    <div class="text-primary text-opacity-25">
+      This is 25% opacity primary text
+    </div>
+
+    <!-- Borders -->
+    <div class="dispaly-1">Borders</div>
+
+    <span class="border"></span>
+    <span class="border-top"></span>
+    <span class="border-end"></span>
+    <span class="border-bottom"></span>
+    <span class="border-start"></span>
+
+    <span class="border border-0"></span>
+    <span class="border border-top-0"></span>
+    <span class="border border-end-0"></span>
+    <span class="border border-bottom-0"></span>
+    <span class="border border-start-0"></span>
+
+    <span class="border border-primary"></span>
+    <span class="border border-secondary"></span>
+    <span class="border border-success"></span>
+    <span class="border border-danger"></span>
+    <span class="border border-warning"></span>
+    <span class="border border-info"></span>
+    <span class="border border-light"></span>
+    <span class="border border-dark"></span>
+    <span class="border border-white"></span>
+
+    <div class="mb-4">
+      <label for="exampleFormControlInput1" class="form-label"
+        >Email address</label
+      >
+      <input
+        type="email"
+        class="form-control border-success"
+        id="exampleFormControlInput1"
+        placeholder="name@example.com"
+      />
+    </div>
+
+    <div class="h4 pb-2 mb-4 text-danger border-bottom border-danger">
+      Dangerous heading
+    </div>
+
+    <div
+      class="
+        p-3
+        bg-info bg-opacity-10
+        border border-info border-start-0
+        rounded-end
+      "
+    >
+      Changing border color and width
+    </div>
+
+    <div class="border border-success p-2 mb-2">
+      This is default success border
+    </div>
+    <div class="border border-success p-2" style="--bs-border-opacity: 0.5">
+      This is 50% opacity success border
+    </div>
+
+    <!-- ! Fun examples -->
+    <div
+      id="carouselExampleControls"
+      class="carousel slide w-25"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://ctvservices.ie/wp-content/uploads/2019/01/Test-Product.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://ctvservices.ie/wp-content/uploads/2019/01/Test-Product.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://ctvservices.ie/wp-content/uploads/2019/01/Test-Product.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <br />
+    <br />
+
+    <p class="bg-dark text-light mb-2 pb-2">test paragraph margins paddings</p>
+    <p class="bg-dark text-light me-5 pe-5">test paragraph margins paddings</p>
+    <p class="bg-dark text-light ms-3 ps-3">test paragraph margins paddings</p>
+    <p class="bg-dark text-light mx-5 px-5">test paragraph margins paddings</p>
+    <p class="bg-dark text-light my-3 py-3">test paragraph margins paddings</p>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
