@@ -1,0 +1,21 @@
+// import functions
+@import "../node_modules/bootstrap/scss/functions";
+
+// Globals
+$enable-rounded: false;
+// $enable-shadows: true;
+
+// Theme colors
+$primary: rgb(157, 63, 239);
+$secondary: rgb(41, 45, 62);
+$dark: rgb(41, 45, 62);
+$light: rgb(251, 247, 210);
+
+// variables + Mixins
+// [importing these after, because they depend on the new values above!]
+
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+// Import Bootstrap.scss
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

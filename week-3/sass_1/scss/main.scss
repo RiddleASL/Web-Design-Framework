@@ -1,2 +1,54 @@
+@import "../node_modules/bootstrap/scss/functions.scss";
+
+
+$warning: #ed9b3e;
+$danger: #af1d04;
+
+$primary: rgb(23, 180, 109);
+$light: rgb(242, 242, 242);
+$dark: rgb(0, 18, 5);
+$secondary: rgb(0, 18, 5);
+
+$enable-rounded: false;
+$enable-gradient: true;
+$enable-shadows: true;
+
+
+@import "../node_modules/bootstrap/scss/variables.scss";
+@import "../node_modules/bootstrap/scss/mixins";
+
+$custom-colors:(
+    "primary-light": $green-400,
+    "secondary-light": rgb(71, 71, 71),
+);
+
+// Colors
+@each $color, $val in $colors {
+    .bg-#{$color}{
+        background-color: $val;
+    }
+    .bg-#{$color}-light{
+        background-color: tint-color($val, 10%);
+    }
+    .bg-#{$color}-dark{
+        background-color: shade-color($val, 40%);
+    }
+}
+
+// Spacing
+$spacer: 1rem;
+$spacers: (
+    0: 0,
+    1: $spacer * .25,
+    2: $spacer * .5,
+    3: $spacer,
+    4: $spacer * 1.5,
+    5: $spacer * 3,
+    6: $spacer * 6
+);
+
+
+$theme-colors: map-merge($theme-colors , $custom-colors );
+//Import Pre-existing Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 

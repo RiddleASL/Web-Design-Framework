@@ -1,0 +1,63 @@
+// import functions
+@import "../node_modules/bootstrap/scss/functions";
+
+// Globals
+$enable-rounded: false;
+// $enable-shadows: true;
+
+// Theme colors
+$primary: rgb(157, 63, 239);
+$secondary: rgb(41, 45, 62);
+$dark: rgb(41, 45, 62);
+$light: rgb(251, 247, 210);
+
+// variables + Mixins
+// [importing these after, because they depend on the new values above!]
+
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+// Custom Colours
+$custom-colors: (
+	"primary-light": rgb(237, 222, 249),
+	"secondary-light": rgb(246, 246, 246),
+	"sexy": rgb(231, 125, 192),
+);
+
+// merge our colors with the theme!
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+// remove colors from the theme
+$theme-colors: map-remove($theme-colors, "danger", "success");
+
+// add new color palette and classes
+// I can call these variables anything I want!
+// The loop will just look at each of the two
+//values for every color in the map.
+@each $color, $val in $colors {
+	.bg-#{$color} {
+		background-color: $val;
+	}
+
+	.bg-#{$color}-light {
+		background-color: tint-color($val, 60%);
+	}
+
+	.bg-#{$color}-dark {
+		background-color: shade-color($val, 20%);
+	}
+	.text-#{$color} {
+		color: $val;
+	}
+
+	.text-#{$color}-light {
+		color: tint-color($val, 60%);
+	}
+
+	.text-#{$color}-dark {
+		color: shade-color($val, 20%);
+	}
+}
+
+// Import Bootstrap.scss
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
