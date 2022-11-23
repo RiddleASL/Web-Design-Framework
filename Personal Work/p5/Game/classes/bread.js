@@ -9,4 +9,10 @@ function Bread(x,y,width,height){
         fill(1,100,100)
         rect(this.x, this.y, this.width, this.height)
     }
+
+    this.check = function(playerX,playerY){
+        if(playerX >= this.x - this.width && playerX <= this.x + this.width && playerY >= this.y - this.height && playerY <= this.y + this.height){
+            return true
+        }
+    }
 }
