@@ -1,0 +1,48 @@
+@import "../scss/node_modules/bootstrap/scss/functions";
+
+
+@import "../scss/node_modules/bootstrap/scss/variables";
+@import "../scss/node_modules/bootstrap/scss/mixins";
+
+@each $color, $val in $colors{
+    .bg-#{$color} {
+        background-color: $val;
+    }
+    .bg-#{$color}-y-ltd{
+        background: linear-gradient(tint-color($val, 20%), shade-color($val, 40%));
+    }
+    .link-#{$color}{
+        color: $val;
+        text-decoration: none;
+        transition-property: color;
+        transition-duration: 300ms;
+        &:hover{
+            color: tint-color($val, 20%);
+        }
+    }
+}
+
+$custom-colors: (
+    "green": rgb(82, 201, 118)
+);
+
+$utilities: ();
+$custom-utilities: (
+    "rotate": (
+        property: transform,
+        class: rotate,
+        values: (
+            0: rotate(0deg),
+            1: rotate(5deg),
+            2: rotate(10deg),
+        )
+    )
+);
+
+
+$utilities: map-merge($utilities , $custom-utilities);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+
+@import "../scss/node_modules/bootstrap/scss/bootstrap.scss";
