@@ -39,6 +39,12 @@ $custom-utilities: (
     )
 );
 
+.card:hover{
+    transition-property: transform;
+    transition-duration: 1s;
+    rotate: 5deg;
+}
+
 
 $utilities: map-merge($utilities , $custom-utilities);
 
