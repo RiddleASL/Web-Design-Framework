@@ -9,384 +9,595 @@
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
 		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
-		<header #="top">
+		<header class="font-main">
 			<nav
-				class="navbar fixed-top navbar-expand-lg navbar-dark bg-black border-1 border-bottom py-3"
+				class="navbar navbar-dark navbar-expand-lg bg-dark py-3 px-3 fs-4 text-light"
 			>
-				<div class="container-xl">
-					<a class="navbar-brand" href="#">Navbar scroll</a>
+				<div class="container-fluid">
+					<a
+						class="navbar-brand fw-bold fs-2 text-primary border-end border-3 pe-4"
+						href="index.html"
+						>Eventify</a
+					>
 					<button
 						class="navbar-toggler"
 						type="button"
 						data-bs-toggle="collapse"
-						data-bs-target="#navbarScroll"
-						aria-controls="navbarScroll"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
 						aria-expanded="false"
 						aria-label="Toggle navigation"
 					>
 						<span class="navbar-toggler-icon"></span>
 					</button>
-					<div class="collapse navbar-collapse" id="navbarScroll">
-						<ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-semibold fs-5">
 							<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="#">Home</a>
+								<a class="nav-link text-light" href="index.html">Home</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">Link</a>
+								<a class="nav-link text-light" href="#">Log-in</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">Link</a>
+								<a class="nav-link text-light" href="#">Register</a>
 							</li>
 						</ul>
-						<form class="d-flex" role="search">
-							<input
-								class="form-control me-2"
-								type="search"
-								placeholder="Search"
-								aria-label="Search"
-							/>
-							<button class="btn btn-outline-light" type="submit">
-								Search
-							</button>
-						</form>
+						<div
+							class="col-4 rounded-2 border-1 border-light border fs-5 p-1"
+						>
+							<form action="" class="d-flex">
+								<input
+									class="form-control border-0 bg-transparent me-2 border-end-1 ms-1 text-light"
+									type="search"
+									placeholder="Search"
+									aria-label="Search"
+								/>
+								<button class="btn border-1 btn-outline-light" type="submit">
+									Search
+								</button>
+							</form>
+						</div>
 					</div>
 				</div>
 			</nav>
-			<div class="container-fluid bg-green-y-ltd text-light py-5 my-5">
-				<div class="container-xl">
-					<div class="row vh-50 d-flex align-items-center">
-						<div class="col-md-6">
-							<p class="text-uppercase fw-bold fs-6">
-								<small>Get Started</small>
-							</p>
-							<h1 class="fw-bold lh-1 display-1">
-								This really is a great product!
-							</h1>
-							<p class="fw-semibold text-uppercase">
-								It really is such a great product - Elon would be so proud of
-								us.
-							</p>
-						</div>
-						<div class="col-md-6">
-							<img src="images/1.png" class="img-fluid" alt="" />
-						</div>
-					</div>
-				</div>
-			</div>
 		</header>
-		<main id="#main">
-			<div class="container-lg py-5">
-				<div
-					class="row justify-content-md-center justify-content-sm-start my-5"
-				>
-					<div class="col-8">
-						<p class="text-md-center text-primary text-uppercase fw-bold fs-6">
-							<small>Get Started</small>
-						</p>
-						<p class="text-md-center fs-2 fw-semibold">
-							It really is such a great product - Elon would be so proud of us.
-							<span class="text-muted">We're a great bunch of people.</span>
-						</p>
-					</div>
-				</div>
-				<div class="row my-5 py-5">
-					<div class="col-md-4 col-sm-6 my-1">
-						<div class="card bg-green text-light border-0">
-							<img src="images/card_1.png" class="card-img-top" alt="..." />
-							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">
-									Some quick example text to build on the card title and make up
-									the bulk of the card's content.
-								</p>
-								<a href="#" class="btn btn-light text-dark fw-semibold"
-									>Go somewhere</a
-								>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 my-1">
-						<div class="card">
-							<img src="images/card_2.png" class="card-img-top" alt="..." />
-							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">
-									Some quick example text to build on the card title and make up
-									the bulk of the card's content.
-								</p>
-								<a href="#" class="btn btn-primary text-light fw-semibold"
-									>Go somewhere</a
-								>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 my-1">
-						<div class="card">
-							<img src="images/card_3.png" class="card-img-top" alt="..." />
-							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">
-									Some quick example text to build on the card title and make up
-									the bulk of the card's content.
-								</p>
-								<a href="#" class="btn btn-primary text-light fw-semibold"
-									>Go somewhere</a
-								>
-							</div>
-						</div>
-					</div>
-				</div>
-				<hr class="border border-1 opacity-10 my-3" />
-				<div class="row my-5 justify-content-sm-center">
-					<div
-						class="col-3 btn-group"
-						role="group"
-						aria-label="Basic mixed styles example"
-					>
-						<button type="button" class="btn btn-outline-warning border-0">
-							<i class="bi bi-star-fill fs-3"></i>
-						</button>
-						<button type="button" class="btn btn-outline-warning border-0">
-							<i class="bi bi-star-fill fs-3"></i>
-						</button>
-						<button type="button" class="btn btn-outline-warning border-0">
-							<i class="bi bi-star-fill fs-3"></i>
-						</button>
-						<button type="button" class="btn btn-outline-warning border-0">
-							<i class="bi bi-star-fill fs-3"></i>
-						</button>
-						<button type="button" class="btn btn-outline-warning border-0">
-							<i class="bi bi-star-fill fs-3"></i>
-						</button>
-					</div>
-				</div>
-				<div class="row text-center">
-					<div class="col-md-4 py-2">
-						<h3>Title</h3>
-						<p class="text-secondary fw-3 fs-5">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-							dolor ad magnam ullam aperiam est ducimus? Magnam, voluptatum
-							tempora. Veniam!
-						</p>
-					</div>
-					<div class="col-md-4 py-2">
-						<h3>Title</h3>
-						<p class="text-secondary fw-3 fs-5">
-							Minima eius ipsam cupiditate illum excepturi. A quis, excepturi,
-							magnam minima expedita maiores et cum nisi aspernatur commodi,
-							temporibus eius.
-						</p>
-					</div>
-					<div class="col-md-4 py-2">
-						<h3>Title</h3>
-						<p class="text-secondary fw-3 fs-5">
-							Eaque tempore consequatur porro ratione id ipsum excepturi
-							quisquam dolorum quibusdam ex laborum aliquid, necessitatibus
-							autem exercitationem corrupti officia doloribus.
-						</p>
-					</div>
-                    <a href="#" class="link-yellow fw-bold fs-3">Button</a>
-				</div>
-			</div>
-			<div
-				class="container-fluid bg-dark text-light my-5 py-5"
-				id="#testimonial"
-			>
-				<div class="container-lg">
-					<div class="row justify-content-center">
-						<div class="col-7 text-center">
-							<p class="text-uppercase fw-bold fs-6">
-								<small>Testimonial</small>
-							</p>
-							<p class="text-md-center fs-2 fw-semibold py-5">
-								“innovative solution. Simplicity and ease of communication with
-								customers and friends. I recommend it.”
-							</p>
-							<img
-								src="images/headshot.jpg"
-								class="img-fluid img-thumbnail rounded-circle"
-								alt="..."
-							/>
-							<p class="fw-semibold text-uppercase py-5">
-								Anna Moringo / <span class="fw-light">Project Manager</span>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="container-lg my-5 py-5">
+		<main>
+			<!-- Top Banner -->
+			<div class="container-fluid pb-5 bg-bgmain text-light fw-semibold">
 				<div class="row justify-content-center">
-					<div class="col-5 text-center">
-						<i class="display-1 text-success bi bi-boxes"></i>
-					</div>
-				</div>
-				<div class="row d-flex align-items-center">
-					<div class="col-md-6">
-						<p class="text-uppercase fw-bold fs-6 text-primary">
-							<small>Get Started</small>
-						</p>
-						<h1 class="fw-bold lh-1 display-5">
-							This really is a great product!
-						</h1>
-						<p class="fw-semibold text-secondary">
-							If you BUY now, I’ll be sending you another mystery bonus as a
-							token of appreciation. I’m selling this for $297 but you’re
-							getting it for FREE Today!
-						</p>
-					</div>
-					<div class="col">
-						<img src="images/2.png" class="img-fluid" lt="" />
-					</div>
-				</div>
-				<hr class="border border-1 opacity-10" />
-				<div class="row d-flex align-items-center">
-					<div class="col">
-						<img src="images/3.png" class="img-fluid" lt="" />
-					</div>
-					<div class="col-md-6">
-						<p class="text-uppercase fw-bold fs-6 text-primary">
-							<small>Get Started</small>
-						</p>
-						<h1 class="fw-bold lh-1 display-5">
-							This really is a great product!
-						</h1>
-						<p class="fw-semibold text-secondary">
-							If you BUY now, I’ll be sending you another mystery bonus as a
-							token of appreciation. I’m selling this for $297 but you’re
-							getting it for FREE Today!
-						</p>
-						<div class="row py-5">
-							<div class="col-6">
-								<i class="bi bi-check2-circle text-primary fs-5 fw-bold"></i>
-								<h4>Title</h4>
-								<p>
-									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-									Magnam odio assumenda minus illum eligendi eius.
-								</p>
-							</div>
-							<div class="col-6">
-								<i class="bi bi-check2-circle text-primary fs-5 fw-bold"></i>
-								<h4>Title</h4>
-								<p>
-									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-									Magnam odio assumenda minus illum eligendi eius.
-								</p>
+					<div class="d-flex col-10 border border-4 border-top-0 rounded-bottom px-0">
+						<div class="col-7 align-items-center justify-content-center d-flex">
+							<div class="">
+								<p class="fnt-s-3 m-0 lh-sm">Find Events</p>
+								<p class="fnt-s-1 m-0 lh-sm text-primary">for everyone</p>
+								<button type='button' class='btn btn-outline-light '>Search Events</button>
 							</div>
 						</div>
-					</div>
-				</div>
-				<hr class="border border-1 opacity-10" />
-				<div
-					class="row justify-content-md-center justify-content-sm-start pt-3"
-				>
-					<div class="col-8">
-						<p class="text-md-center text-primary text-uppercase fw-bold fs-6">
-							<small>FAQ</small>
-						</p>
-						<p class="text-md-center fs-2 fw-semibold py-3">
-							List of questions and answers about our community
-						</p>
-					</div>
-					<div class="row">
-						<div class="col-md-6 d-flex">
-							<div class="px-5">
-								<i
-									class="bi bi-1-circle text-primary fs-3 align-self-start"
-								></i>
-							</div>
-							<div>
-								<h3>Get Started</h3>
-								<p>
-									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-									Ipsa, incidunt maiores! Unde error sint suscipit.
-								</p>
-							</div>
-						</div>
-						<div class="col-md-6 d-flex">
-							<div class="px-5">
-								<i
-									class="bi bi-2-circle text-primary fs-3 align-self-start"
-								></i>
-							</div>
-							<div>
-								<h3>Get Started</h3>
-								<p>
-									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-									Ipsa, incidunt maiores! Unde error sint suscipit.
-								</p>
-							</div>
-						</div>
-						<div class="col-md-6 d-flex">
-							<div class="px-5">
-								<i
-									class="bi bi-3-circle text-primary fs-3 align-self-start"
-								></i>
-							</div>
-							<div>
-								<h3>Get Started</h3>
-								<p>
-									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-									Ipsa, incidunt maiores! Unde error sint suscipit.
-								</p>
-							</div>
-						</div>
-						<div class="col-md-6 d-flex">
-							<div class="px-5">
-								<i
-									class="bi bi-4-circle text-primary fs-3 align-self-start"
-								></i>
-							</div>
-							<div>
-								<h3>Get Started</h3>
-								<p>
-									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-									Ipsa, incidunt maiores! Unde error sint suscipit.
-								</p>
-							</div>
+						<div class="col-5 justify-content-end d-flex">
+							<img src="/images/accessablilty.png" alt="accessability image" class="my-3 me-3 border border-3 border-round-1 img-size-2">
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="container-fluid bg-light">
-				<div class="container-lg">
-					<div class="row justify-content-center mt-5 py-5">
-						<div class="col-1 text-center py-5">
-							<i class="display-1 text-success bi bi-envelope-fill" id="icon1"></i>
-							<a href="#"><i class="display-1 text-success bi bi-envelope-open-fill" id="icon2"></i></a>
+			<!-- First row of small cards -->
+			<div class="container-fluid bg-bgmain">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 col-sm-6">
+							<p class="fnt-s-3 text-primary border-3 border-primary fw-semibold border-bottom">Find Events</p>
 						</div>
-						<div class="row justify-content-md-center justify-content-sm-start">
-							<div class="col-md-8">
-								<p
-									class="text-md-center text-success text-uppercase fw-bold fs-6"
-								>
-									<small>Get Started</small>
-								</p>
-								<p class="text-md-center fs-2 fw-semibold">
-									It really is such a great product - Elon would be so proud of
-									us.
-									<span class="text-muted">We're a great bunch of people.</span>
-								</p>
-								<p class="text-md-center py-2">
-									Leave us your e-mail and we will get back to you. This is the
-									first step to becoming a tester.
-								</p>
-								<div class="input-group pt-2 pb-5">
-									<input
-										type="text"
-										class="form-control py-3"
-										placeholder="Recipient's username"
-										aria-label="Recipient's username"
-										aria-describedby="button-addon2"
-									/>
-									<button
-										class="btn btn-outline-secondary"
-										type="button"
-										id="button-addon2"
-									>
-										Button
+					</div>
+					<div class="row mb-3">
+						<div class="col-12 d-flex gap-3">
+							<div class="dropdown">
+								<button class="btn btn-secondary dropdown-toggle bg-bgmain border border-2 rounded-pill fw-semibold" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Day
+								</button>
+								<ul class="dropdown-menu bg-bgmain border">
+								<li class="d-flex justify-content-between"><p class="cust-drop-item text-white m-0 ms-2" href="#">Monday</p><input class="me-2" type="checkbox" name="" id=""></li>
+								<li class="d-flex justify-content-between"><p class="cust-drop-item text-white m-0 ms-2" href="#">Tuesay</p><input class="me-2" type="checkbox" name="" id=""></li>
+								<li class="d-flex justify-content-between"><p class="cust-drop-item text-white m-0 ms-2" href="#">Wednesday</p><input class="me-2" type="checkbox" name="" id=""></li>
+								<li class="d-flex justify-content-between"><p class="cust-drop-item text-white m-0 ms-2" href="#">Thursday</p><input class="me-2" type="checkbox" name="" id=""></li>
+								<li class="d-flex justify-content-between"><p class="cust-drop-item text-white m-0 ms-2" href="#">Friday</p><input class="me-2" type="checkbox" name="" id=""></li>
+								<li class="d-flex justify-content-between"><p class="cust-drop-item text-white m-0 ms-2" href="#">Saturay</p><input class="me-2" type="checkbox" name="" id=""></li>
+								<li class="d-flex justify-content-between"><p class="cust-drop-item text-white m-0 ms-2" href="#">Sunday</p><input class="me-2" type="checkbox" name="" id=""></li>
+								</ul>
+							</div>
+							<div class="dropdown">
+								<button class="btn btn-secondary dropdown-toggle bg-bgmain border border-2 rounded-pill fw-semibold" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Distance
+								</button>
+								<ul class="dropdown-menu bg-bgmain border">
+								<li class="d-flex justify-content-between"><p class="cust-drop-item text-white m-0 ms-2" href="#">Less than 10km</p><input class="me-2" type="checkbox" name="" id=""></li>
+								<li class="d-flex justify-content-between"><p class="cust-drop-item text-white m-0 ms-2" href="#">Within 10km</p><input class="me-2" type="checkbox" name="" id=""></li>
+								<li class="d-flex justify-content-between"><p class="cust-drop-item text-white m-0 ms-2" href="#">Within 20km</p><input class="me-2" type="checkbox" name="" id=""></li>
+								<li class="d-flex justify-content-between"><p class="cust-drop-item text-white m-0 ms-2" href="#">Within 30km</p><input class="me-2" type="checkbox" name="" id=""></li>
+								<li class="d-flex justify-content-between"><p class="cust-drop-item text-white m-0 ms-2" href="#">Within 40km</p><input class="me-2" type="checkbox" name="" id=""></li>
+								<li class="d-flex justify-content-between"><p class="cust-drop-item text-white m-0 ms-2" href="#">Within 50km</p><input class="me-2" type="checkbox" name="" id=""></li>
+								</ul>
+							</div>
+							<div class="dropdown">
+								<button class="btn btn-secondary dropdown-toggle bg-bgmain border border-2 rounded-pill fw-semibold" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Category
+								</button>
+								<ul class="dropdown-menu bg-bgmain border">
+								<li class="d-flex justify-content-between"><p class="cust-drop-item text-white m-0 ms-2" href="#">Music</p><input class="me-2" type="checkbox" name="" id=""></li>
+								<li class="d-flex justify-content-between"><p class="cust-drop-item text-white m-0 ms-2" href="#">Art</p><input class="me-2" type="checkbox" name="" id=""></li>
+								<li class="d-flex justify-content-between"><p class="cust-drop-item text-white m-0 ms-2" href="#">Fitness</p><input class="me-2" type="checkbox" name="" id=""></li>
+								<li class="d-flex justify-content-between"><p class="cust-drop-item text-white m-0 ms-2" href="#">Outdoors</p><input class="me-2" type="checkbox" name="" id=""></li>
+								<li class="d-flex justify-content-between"><p class="cust-drop-item text-white m-0 ms-2" href="#">Pub Quiz</p><input class="me-2" type="checkbox" name="" id=""></li>
+								<li class="d-flex justify-content-between"><p class="cust-drop-item text-white m-0 ms-2" href="#">Hobby</p><input class="me-2" type="checkbox" name="" id=""></li>
+								</ul>
+							</div>
+							<div class="dropdown">
+								<button class="btn btn-secondary dropdown-toggle bg-bgmain border border-2 rounded-pill fw-semibold" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Accessability
+								</button>
+								<ul class="dropdown-menu bg-bgmain border">
+								<li class="d-flex justify-content-between"><p class="cust-drop-item text-white m-0 ms-2" href="#">Deaf/HOH</p><input class="me-2" type="checkbox" name="" id=""></li>
+								<li class="d-flex justify-content-between"><p class="cust-drop-item text-white m-0 ms-2" href="#">Sight Impaired</p><input class="me-2" type="checkbox" name="" id=""></li>
+								<li class="d-flex justify-content-between"><p class="cust-drop-item text-white m-0 ms-2" href="#">Mobility</p><input class="me-2" type="checkbox" name="" id=""></li>
+								<li class="d-flex justify-content-between"><p class="cust-drop-item text-white m-0 ms-2" href="#">Parking Access</p><input class="me-2" type="checkbox" name="" id=""></li>
+								<li class="d-flex justify-content-between"><p class="cust-drop-item text-white m-0 ms-2" href="#">Epilepsy</p><input class="me-2" type="checkbox" name="" id=""></li>
+								</ul>
+							</div>
+							<div class="dropdown">
+								<button class="btn btn-secondary dropdown-toggle bg-secondry border border-2 rounded-pill fw-semibold" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Sort By
+								</button>
+								<ul class="dropdown-menu bg-bgmain border">
+								<li class="d-flex justify-content-between"><p class="cust-drop-item text-white m-0 ms-2" href="#">Highest Distance</p><input class="me-2" type="checkbox" name="" id=""></li>
+								<li class="d-flex justify-content-between"><p class="cust-drop-item text-white m-0 ms-2" href="#">Lowest Distance</p><input class="me-2" type="checkbox" name="" id=""></li>
+								<li class="d-flex justify-content-between"><p class="cust-drop-item text-white m-0 ms-2" href="#">Highest Price</p><input class="me-2" type="checkbox" name="" id=""></li>
+								<li class="d-flex justify-content-between"><p class="cust-drop-item text-white m-0 ms-2" href="#">Lowest Price</p><input class="me-2" type="checkbox" name="" id=""></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6 col-md-3 m-0 pb-3 mb-3">
+							<div class="cust-smcard border">
+								<a href="/eventPage.html">
+									<img src="/images/balloons-1869790__340.jpg" alt="">
+								</a>
+								<div class="cust-smcard-text border d-flex">
+									<div class="px-2">
+										<a class="fnt-s-4 text-light fw-semibold lh-sm" href="/eventPage.html">Balloon Party!</a>
+										<p class="fnt-s-5 text-light fw-semibold lh-sm">Sat, Jan 12th, 10:00</p>
+										<p class="fnt-s-6 text-light fw-semibold lh-sm">Main Hall - 4 Anglesea Rd, Ballsbridge, Dublin </p>
+										<p class="fnt-s-6 text-light fw-semibold lh-sm">50 Attendees</p>
+									</div>
+									<button type='button' class='btn btn-outline-light rounded-circle h-100 me-2 mt-2'>
+										<i class="bi bi-heart-fill fnt-s-4"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-3 m-0 pb-3 mb-3">
+							<div class="cust-smcard border">
+								<a href="/eventPage.html">
+									<img src="/images/balloons-1869790__340.jpg" alt="">
+								</a>
+								<div class="cust-smcard-text border d-flex">
+									<div class="px-2">
+										<a class="fnt-s-4 text-light fw-semibold lh-sm" href="/eventPage.html">Balloon Party!</a>
+										<p class="fnt-s-5 text-light fw-semibold lh-sm">Sat, Jan 12th, 10:00</p>
+										<p class="fnt-s-6 text-light fw-semibold lh-sm">Main Hall - 4 Anglesea Rd, Ballsbridge, Dublin </p>
+										<p class="fnt-s-6 text-light fw-semibold lh-sm">50 Attendees</p>
+									</div>
+									<button type='button' class='btn btn-outline-light rounded-circle h-100 me-2 mt-2'>
+										<i class="bi bi-heart-fill fnt-s-4"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-3 m-0 pb-3 mb-3">
+							<div class="cust-smcard border">
+								<a href="/eventPage.html">
+									<img src="/images/balloons-1869790__340.jpg" alt="">
+								</a>
+								<div class="cust-smcard-text border d-flex">
+									<div class="px-2">
+										<a class="fnt-s-4 text-light fw-semibold lh-sm" href="/eventPage.html">Balloon Party!</a>
+										<p class="fnt-s-5 text-light fw-semibold lh-sm">Sat, Jan 12th, 10:00</p>
+										<p class="fnt-s-6 text-light fw-semibold lh-sm">Main Hall - 4 Anglesea Rd, Ballsbridge, Dublin </p>
+										<p class="fnt-s-6 text-light fw-semibold lh-sm">50 Attendees</p>
+									</div>
+									<button type='button' class='btn btn-outline-light rounded-circle h-100 me-2 mt-2'>
+										<i class="bi bi-heart-fill fnt-s-4"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-3 m-0 pb-3 mb-3">
+							<div class="cust-smcard border">
+								<a href="/eventPage.html">
+									<img src="/images/balloons-1869790__340.jpg" alt="">
+								</a>
+								<div class="cust-smcard-text border d-flex">
+									<div class="px-2">
+										<a class="fnt-s-4 text-light fw-semibold lh-sm" href="/eventPage.html">Balloon Party!</a>
+										<p class="fnt-s-5 text-light fw-semibold lh-sm">Sat, Jan 12th, 10:00</p>
+										<p class="fnt-s-6 text-light fw-semibold lh-sm">Main Hall - 4 Anglesea Rd, Ballsbridge, Dublin </p>
+										<p class="fnt-s-6 text-light fw-semibold lh-sm">50 Attendees</p>
+									</div>
+									<button type='button' class='btn btn-outline-light rounded-circle h-100 me-2 mt-2'>
+										<i class="bi bi-heart-fill fnt-s-4"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-3 m-0 pb-3 mb-3">
+							<div class="cust-smcard border">
+								<a href="/eventPage.html">
+									<img src="/images/balloons-1869790__340.jpg" alt="">
+								</a>
+								<div class="cust-smcard-text border d-flex">
+									<div class="px-2">
+										<a class="fnt-s-4 text-light fw-semibold lh-sm" href="/eventPage.html">Balloon Party!</a>
+										<p class="fnt-s-5 text-light fw-semibold lh-sm">Sat, Jan 12th, 10:00</p>
+										<p class="fnt-s-6 text-light fw-semibold lh-sm">Main Hall - 4 Anglesea Rd, Ballsbridge, Dublin </p>
+										<p class="fnt-s-6 text-light fw-semibold lh-sm">50 Attendees</p>
+									</div>
+									<button type='button' class='btn btn-outline-light rounded-circle h-100 me-2 mt-2'>
+										<i class="bi bi-heart-fill fnt-s-4"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-3 m-0 pb-3 mb-3">
+							<div class="cust-smcard border">
+								<a href="/eventPage.html">
+									<img src="/images/balloons-1869790__340.jpg" alt="">
+								</a>
+								<div class="cust-smcard-text border d-flex">
+									<div class="px-2">
+										<a class="fnt-s-4 text-light fw-semibold lh-sm" href="/eventPage.html">Balloon Party!</a>
+										<p class="fnt-s-5 text-light fw-semibold lh-sm">Sat, Jan 12th, 10:00</p>
+										<p class="fnt-s-6 text-light fw-semibold lh-sm">Main Hall - 4 Anglesea Rd, Ballsbridge, Dublin </p>
+										<p class="fnt-s-6 text-light fw-semibold lh-sm">50 Attendees</p>
+									</div>
+									<button type='button' class='btn btn-outline-light rounded-circle h-100 me-2 mt-2'>
+										<i class="bi bi-heart-fill fnt-s-4"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-3 m-0 pb-3 mb-3">
+							<div class="cust-smcard border">
+								<a href="/eventPage.html">
+									<img src="/images/balloons-1869790__340.jpg" alt="">
+								</a>
+								<div class="cust-smcard-text border d-flex">
+									<div class="px-2">
+										<a class="fnt-s-4 text-light fw-semibold lh-sm" href="/eventPage.html">Balloon Party!</a>
+										<p class="fnt-s-5 text-light fw-semibold lh-sm">Sat, Jan 12th, 10:00</p>
+										<p class="fnt-s-6 text-light fw-semibold lh-sm">Main Hall - 4 Anglesea Rd, Ballsbridge, Dublin </p>
+										<p class="fnt-s-6 text-light fw-semibold lh-sm">50 Attendees</p>
+									</div>
+									<button type='button' class='btn btn-outline-light rounded-circle h-100 me-2 mt-2'>
+										<i class="bi bi-heart-fill fnt-s-4"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-3 m-0 pb-3 mb-3">
+							<div class="cust-smcard border">
+								<a href="/eventPage.html">
+									<img src="/images/balloons-1869790__340.jpg" alt="">
+								</a>
+								<div class="cust-smcard-text border d-flex">
+									<div class="px-2">
+										<a class="fnt-s-4 text-light fw-semibold lh-sm" href="/eventPage.html">Balloon Party!</a>
+										<p class="fnt-s-5 text-light fw-semibold lh-sm">Sat, Jan 12th, 10:00</p>
+										<p class="fnt-s-6 text-light fw-semibold lh-sm">Main Hall - 4 Anglesea Rd, Ballsbridge, Dublin </p>
+										<p class="fnt-s-6 text-light fw-semibold lh-sm">50 Attendees</p>
+									</div>
+									<button type='button' class='btn btn-outline-light rounded-circle h-100 me-2 mt-2'>
+										<i class="bi bi-heart-fill fnt-s-4"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+			<div class="container-fluid bg-bgmain">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 col-sm-6">
+							<p class="text-decoration-underline fnt-s-3 text-primary fw-semibold">Popular events</p>
+						</div>
+
+						<!-- Large Cards -->
+						<div class="row justify-content-center p-0 m-0">
+							<div class="col-sm-12 col-md-4 m-0 pb-3 mb-3">
+								<div class="cust-smcard border">
+									<a href="/eventPage.html">
+										<img src="/images/balloons-1869790__340.jpg" alt="">
+									</a>
+									<div class="cust-smcard-text justify-content-between border d-flex">
+										<div class="px-2">
+											<a class="fnt-s-4 text-light fw-semibold lh-sm" href="/eventPage.html">Balloon Party!</a>
+											<p class="fnt-s-5 text-light fw-semibold lh-sm">Sat, Jan 12th, 10:00</p>
+											<p class="fnt-s-6 text-light fw-semibold lh-sm">Main Hall - 4 Anglesea Rd, Ballsbridge, Dublin </p>
+											<p class="fnt-s-6 text-light fw-semibold lh-sm">50 Attendees</p>
+										</div>
+										<button type='button' class='btn btn-outline-light rounded-circle h-100 me-2 mt-2'>
+											<i class="bi bi-heart-fill fnt-s-4"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-12 col-md-4 m-0 pb-3 mb-3">
+								<div class="cust-smcard border">
+									<a href="/eventPage.html">
+										<img src="/images/balloons-1869790__340.jpg" alt="">
+									</a>
+									<div class="cust-smcard-text justify-content-between border d-flex">
+										<div class="px-2">
+											<a class="fnt-s-4 text-light fw-semibold lh-sm" href="/eventPage.html">Balloon Party!</a>
+											<p class="fnt-s-5 text-light fw-semibold lh-sm">Sat, Jan 12th, 10:00</p>
+											<p class="fnt-s-6 text-light fw-semibold lh-sm">Main Hall - 4 Anglesea Rd, Ballsbridge, Dublin </p>
+											<p class="fnt-s-6 text-light fw-semibold lh-sm">50 Attendees</p>
+										</div>
+										<button type='button' class='btn btn-outline-light rounded-circle h-100 me-2 mt-2'>
+											<i class="bi bi-heart-fill fnt-s-4"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-12 col-md-4 m-0 pb-3 mb-3">
+								<div class="cust-smcard border">
+									<a href="/eventPage.html">
+										<img src="/images/balloons-1869790__340.jpg" alt="">
+									</a>
+									<div class="cust-smcard-text justify-content-between border d-flex">
+										<div class="px-2">
+											<a class="fnt-s-4 text-light fw-semibold lh-sm" href="/eventPage.html">Balloon Party!</a>
+											<p class="fnt-s-5 text-light fw-semibold lh-sm">Sat, Jan 12th, 10:00</p>
+											<p class="fnt-s-6 text-light fw-semibold lh-sm">Main Hall - 4 Anglesea Rd, Ballsbridge, Dublin </p>
+											<p class="fnt-s-6 text-light fw-semibold lh-sm">50 Attendees</p>
+										</div>
+										<button type='button' class='btn btn-outline-light rounded-circle h-100 me-2 mt-2'>
+											<i class="bi bi-heart-fill fnt-s-4"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Small cards again -->
+			<div class="container-fluid bg-bgmain">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6 col-md-3 m-0 pb-3 mb-3">
+							<div class="cust-smcard border">
+								<a href="/eventPage.html">
+									<img src="/images/balloons-1869790__340.jpg" alt="">
+								</a>
+								<div class="cust-smcard-text border d-flex">
+									<div class="px-2">
+										<a class="fnt-s-4 text-light fw-semibold lh-sm" href="/eventPage.html">Balloon Party!</a>
+										<p class="fnt-s-5 text-light fw-semibold lh-sm">Sat, Jan 12th, 10:00</p>
+										<p class="fnt-s-6 text-light fw-semibold lh-sm">Main Hall - 4 Anglesea Rd, Ballsbridge, Dublin </p>
+										<p class="fnt-s-6 text-light fw-semibold lh-sm">50 Attendees</p>
+									</div>
+									<button type='button' class='btn btn-outline-light rounded-circle h-100 me-2 mt-2'>
+										<i class="bi bi-heart-fill fnt-s-4"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-3 m-0 pb-3 mb-3">
+							<div class="cust-smcard border">
+								<a href="/eventPage.html">
+									<img src="/images/balloons-1869790__340.jpg" alt="">
+								</a>
+								<div class="cust-smcard-text border d-flex">
+									<div class="px-2">
+										<a class="fnt-s-4 text-light fw-semibold lh-sm" href="/eventPage.html">Balloon Party!</a>
+										<p class="fnt-s-5 text-light fw-semibold lh-sm">Sat, Jan 12th, 10:00</p>
+										<p class="fnt-s-6 text-light fw-semibold lh-sm">Main Hall - 4 Anglesea Rd, Ballsbridge, Dublin </p>
+										<p class="fnt-s-6 text-light fw-semibold lh-sm">50 Attendees</p>
+									</div>
+									<button type='button' class='btn btn-outline-light rounded-circle h-100 me-2 mt-2'>
+										<i class="bi bi-heart-fill fnt-s-4"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-3 m-0 pb-3 mb-3">
+							<div class="cust-smcard border">
+								<a href="/eventPage.html">
+									<img src="/images/balloons-1869790__340.jpg" alt="">
+								</a>
+								<div class="cust-smcard-text border d-flex">
+									<div class="px-2">
+										<a class="fnt-s-4 text-light fw-semibold lh-sm" href="/eventPage.html">Balloon Party!</a>
+										<p class="fnt-s-5 text-light fw-semibold lh-sm">Sat, Jan 12th, 10:00</p>
+										<p class="fnt-s-6 text-light fw-semibold lh-sm">Main Hall - 4 Anglesea Rd, Ballsbridge, Dublin </p>
+										<p class="fnt-s-6 text-light fw-semibold lh-sm">50 Attendees</p>
+									</div>
+									<button type='button' class='btn btn-outline-light rounded-circle h-100 me-2 mt-2'>
+										<i class="bi bi-heart-fill fnt-s-4"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-3 m-0 pb-3 mb-3">
+							<div class="cust-smcard border">
+								<a href="/eventPage.html">
+									<img src="/images/balloons-1869790__340.jpg" alt="">
+								</a>
+								<div class="cust-smcard-text border d-flex">
+									<div class="px-2">
+										<a class="fnt-s-4 text-light fw-semibold lh-sm" href="/eventPage.html">Balloon Party!</a>
+										<p class="fnt-s-5 text-light fw-semibold lh-sm">Sat, Jan 12th, 10:00</p>
+										<p class="fnt-s-6 text-light fw-semibold lh-sm">Main Hall - 4 Anglesea Rd, Ballsbridge, Dublin </p>
+										<p class="fnt-s-6 text-light fw-semibold lh-sm">50 Attendees</p>
+									</div>
+									<button type='button' class='btn btn-outline-light rounded-circle h-100 me-2 mt-2'>
+										<i class="bi bi-heart-fill fnt-s-4"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-3 m-0 pb-3 mb-3">
+							<div class="cust-smcard border">
+								<a href="/eventPage.html">
+									<img src="/images/balloons-1869790__340.jpg" alt="">
+								</a>
+								<div class="cust-smcard-text border d-flex">
+									<div class="px-2">
+										<a class="fnt-s-4 text-light fw-semibold lh-sm" href="/eventPage.html">Balloon Party!</a>
+										<p class="fnt-s-5 text-light fw-semibold lh-sm">Sat, Jan 12th, 10:00</p>
+										<p class="fnt-s-6 text-light fw-semibold lh-sm">Main Hall - 4 Anglesea Rd, Ballsbridge, Dublin </p>
+										<p class="fnt-s-6 text-light fw-semibold lh-sm">50 Attendees</p>
+									</div>
+									<button type='button' class='btn btn-outline-light rounded-circle h-100 me-2 mt-2'>
+										<i class="bi bi-heart-fill fnt-s-4"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-3 m-0 pb-3 mb-3">
+							<div class="cust-smcard border">
+								<a href="/eventPage.html">
+									<img src="/images/balloons-1869790__340.jpg" alt="">
+								</a>
+								<div class="cust-smcard-text border d-flex">
+									<div class="px-2">
+										<a class="fnt-s-4 text-light fw-semibold lh-sm" href="/eventPage.html">Balloon Party!</a>
+										<p class="fnt-s-5 text-light fw-semibold lh-sm">Sat, Jan 12th, 10:00</p>
+										<p class="fnt-s-6 text-light fw-semibold lh-sm">Main Hall - 4 Anglesea Rd, Ballsbridge, Dublin </p>
+										<p class="fnt-s-6 text-light fw-semibold lh-sm">50 Attendees</p>
+									</div>
+									<button type='button' class='btn btn-outline-light rounded-circle h-100 me-2 mt-2'>
+										<i class="bi bi-heart-fill fnt-s-4"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-3 m-0 pb-3 mb-3">
+							<div class="cust-smcard border">
+								<a href="/eventPage.html">
+									<img src="/images/balloons-1869790__340.jpg" alt="">
+								</a>
+								<div class="cust-smcard-text border d-flex">
+									<div class="px-2">
+										<a class="fnt-s-4 text-light fw-semibold lh-sm" href="/eventPage.html">Balloon Party!</a>
+										<p class="fnt-s-5 text-light fw-semibold lh-sm">Sat, Jan 12th, 10:00</p>
+										<p class="fnt-s-6 text-light fw-semibold lh-sm">Main Hall - 4 Anglesea Rd, Ballsbridge, Dublin </p>
+										<p class="fnt-s-6 text-light fw-semibold lh-sm">50 Attendees</p>
+									</div>
+									<button type='button' class='btn btn-outline-light rounded-circle h-100 me-2 mt-2'>
+										<i class="bi bi-heart-fill fnt-s-4"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-3 m-0 pb-3 mb-3">
+							<div class="cust-smcard border">
+								<a href="/eventPage.html">
+									<img src="/images/balloons-1869790__340.jpg" alt="">
+								</a>
+								<div class="cust-smcard-text border d-flex">
+									<div class="px-2">
+										<a class="fnt-s-4 text-light fw-semibold lh-sm" href="/eventPage.html">Balloon Party!</a>
+										<p class="fnt-s-5 text-light fw-semibold lh-sm">Sat, Jan 12th, 10:00</p>
+										<p class="fnt-s-6 text-light fw-semibold lh-sm">Main Hall - 4 Anglesea Rd, Ballsbridge, Dublin </p>
+										<p class="fnt-s-6 text-light fw-semibold lh-sm">50 Attendees</p>
+									</div>
+									<button type='button' class='btn btn-outline-light rounded-circle h-100 me-2 mt-2'>
+										<i class="bi bi-heart-fill fnt-s-4"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-3 m-0 pb-3 mb-3">
+							<div class="cust-smcard border">
+								<a href="/eventPage.html">
+									<img src="/images/balloons-1869790__340.jpg" alt="">
+								</a>
+								<div class="cust-smcard-text border d-flex">
+									<div class="px-2">
+										<a class="fnt-s-4 text-light fw-semibold lh-sm" href="/eventPage.html">Balloon Party!</a>
+										<p class="fnt-s-5 text-light fw-semibold lh-sm">Sat, Jan 12th, 10:00</p>
+										<p class="fnt-s-6 text-light fw-semibold lh-sm">Main Hall - 4 Anglesea Rd, Ballsbridge, Dublin </p>
+										<p class="fnt-s-6 text-light fw-semibold lh-sm">50 Attendees</p>
+									</div>
+									<button type='button' class='btn btn-outline-light rounded-circle h-100 me-2 mt-2'>
+										<i class="bi bi-heart-fill fnt-s-4"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-3 m-0 pb-3 mb-3">
+							<div class="cust-smcard border">
+								<a href="/eventPage.html">
+									<img src="/images/balloons-1869790__340.jpg" alt="">
+								</a>
+								<div class="cust-smcard-text border d-flex">
+									<div class="px-2">
+										<a class="fnt-s-4 text-light fw-semibold lh-sm" href="/eventPage.html">Balloon Party!</a>
+										<p class="fnt-s-5 text-light fw-semibold lh-sm">Sat, Jan 12th, 10:00</p>
+										<p class="fnt-s-6 text-light fw-semibold lh-sm">Main Hall - 4 Anglesea Rd, Ballsbridge, Dublin </p>
+										<p class="fnt-s-6 text-light fw-semibold lh-sm">50 Attendees</p>
+									</div>
+									<button type='button' class='btn btn-outline-light rounded-circle h-100 me-2 mt-2'>
+										<i class="bi bi-heart-fill fnt-s-4"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-3 m-0 pb-3 mb-3">
+							<div class="cust-smcard border">
+								<a href="/eventPage.html">
+									<img src="/images/balloons-1869790__340.jpg" alt="">
+								</a>
+								<div class="cust-smcard-text border d-flex">
+									<div class="px-2">
+										<a class="fnt-s-4 text-light fw-semibold lh-sm" href="/eventPage.html">Balloon Party!</a>
+										<p class="fnt-s-5 text-light fw-semibold lh-sm">Sat, Jan 12th, 10:00</p>
+										<p class="fnt-s-6 text-light fw-semibold lh-sm">Main Hall - 4 Anglesea Rd, Ballsbridge, Dublin </p>
+										<p class="fnt-s-6 text-light fw-semibold lh-sm">50 Attendees</p>
+									</div>
+									<button type='button' class='btn btn-outline-light rounded-circle h-100 me-2 mt-2'>
+										<i class="bi bi-heart-fill fnt-s-4"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-3 m-0 pb-3 mb-3">
+							<div class="cust-smcard border">
+								<a href="/eventPage.html">
+									<img src="/images/balloons-1869790__340.jpg" alt="">
+								</a>
+								<div class="cust-smcard-text border d-flex">
+									<div class="px-2">
+										<a class="fnt-s-4 text-light fw-semibold lh-sm" href="/eventPage.html">Balloon Party!</a>
+										<p class="fnt-s-5 text-light fw-semibold lh-sm">Sat, Jan 12th, 10:00</p>
+										<p class="fnt-s-6 text-light fw-semibold lh-sm">Main Hall - 4 Anglesea Rd, Ballsbridge, Dublin </p>
+										<p class="fnt-s-6 text-light fw-semibold lh-sm">50 Attendees</p>
+									</div>
+									<button type='button' class='btn btn-outline-light rounded-circle h-100 me-2 mt-2'>
+										<i class="bi bi-heart-fill fnt-s-4"></i>
 									</button>
 								</div>
 							</div>
@@ -394,78 +605,37 @@
 					</div>
 				</div>
 			</div>
-			<div class="container-fluid bg-dark text-light py-5">
-				<div class="container-lg">
-					<div class="row">
-						<div class="col-md-5">
-							<p class="text-uppercase fw-bold fs-6 pb-5">
-								<small>about us</small>
-							</p>
-							<h3>Get Started</h3>
-							<p>
-								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa,
-								incidunt maiores! Unde error sint suscipit.
-							</p>
-						</div>
-						<div class="col-md-2">
-							<p class="text-uppercase fw-bold fs-6 pb-5">
-								<small>navigation</small>
-							</p>
-							<h3>Get Started</h3>
-							<ul class="list-group list-group-flush">
-								<li
-									class="list-group-item bg-dark text-light fs-5 border-0 px-0 py-1"
-								>
-									An item
-								</li>
-								<li
-									class="list-group-item bg-dark text-light fs-5 border-0 px-0 py-1"
-								>
-									A second item
-								</li>
-								<li
-									class="list-group-item bg-dark text-light fs-5 border-0 px-0 py-1"
-								>
-									A third item
-								</li>
-								<li
-									class="list-group-item bg-dark text-light fs-5 border-0 px-0 py-1"
-								>
-									A fourth item
-								</li>
-								<li
-									class="list-group-item bg-dark text-light fs-5 border-0 px-0 py-1"
-								>
-									And a fifth one
-								</li>
-							</ul>
-						</div>
-						<div class="col-md-4">
-							<p class="text-uppercase fw-bold fs-6 pb-5">
-								<small>Beta Application</small>
-							</p>
-							<h3>Join the beta for application</h3>
-							<div>
-								<button type="button" class="btn btn-outline-light button-lg">
-									Button
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="currentColor"
-										class="bi bi-caret-right-fill"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
-										></path>
-									</svg>
-								</button>
-							</div>
+
+			<div class="container-fluid bg-bgmain">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-md-6 pb-4 mb-2">
+							<button type='button' class='btn btn-outline-light border-3 border w-100 fw-bold ' >
+								<i class="bi bi-chevron-down mx-3 fnt-s-3"></i><span class="fnt-s-4">Show More</span><i class="bi bi-chevron-down mx-3 fnt-s-3"></i>
+							</button>
 						</div>
 					</div>
 				</div>
 			</div>
+
+			<footer class="container-fluid bg-black text-white">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-md-10 d-flex justify-content-center">
+							<div class="mt-5 fnt-s-3">
+								<ul class="d-flex gap-5">
+									<li class="ls-dec-none"><a href="#" class="text-decoration-none text-white">Home</a></li>
+									<li class="ls-dec-none"><a href="#" class="text-decoration-none text-white">Services</a></li>
+									<li class="ls-dec-none"><a href="#" class="text-decoration-none text-white">About</a></li>
+									<li class="ls-dec-none"><a href="#" class="text-decoration-none text-white">Terms</a></li>
+									<li class="ls-dec-none"><a href="#" class="text-decoration-none text-white">Private Policy</a></li>
+								</ul>
+								<p class="text-center fnt-s-5 text-white-50">Eventify © 2023</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
 		</main>
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
